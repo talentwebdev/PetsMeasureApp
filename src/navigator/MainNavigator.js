@@ -13,9 +13,54 @@ import {
   PetsListScreen,
   NotificationDetailScreen,
   MeasureConfigScreen,
+  DrawerContentScreen,
+  MeasureStartScreen,
+  MeasureDescriptionScreen,
+  MeasureStepsScreen,
+  MeasureEndScreen,
 } from './../screens';
 import {Dimensions} from 'react-native';
 
+const drawerNavigator = createDrawerNavigator(
+  {
+    PetsListScreen: {
+      screen: PetsListScreen,
+      navigationOptions: {headerShown: false},
+    },
+    MeasureConfigScreen: {
+      screen: MeasureConfigScreen,
+      navigationOptions: {headerShown: false},
+    },
+    MeasureStartScreen: {
+      screen: MeasureStartScreen,
+      navigationOptions: {headerShown: false},
+    },
+    MeasureDescriptionScreen: {
+      screen: MeasureDescriptionScreen,
+      navigationOptions: {headerShown: false},
+    },
+    MeasureStepsScreen: {
+      screen: MeasureStepsScreen,
+      navigationOptions: {headerShown: false},
+    },
+    MeasureEndScreen: {
+      screen: MeasureEndScreen,
+      navigationOptions: {headerShown: false},
+    },
+  },
+  {
+    initialRouteName: 'PetsListScreen',
+    drawerPosition: 'left',
+    drawerWidth: function() {
+      const {width} = Dimensions.get('window');
+      return width;
+    },
+    contentOptions: {
+      activeTintColor: 'orange',
+    },
+    contentComponent: DrawerContentScreen,
+  },
+);
 const MainNavigator = createStackNavigator(
   {
     FirstScreen: {screen: FirstScreen, navigationOptions: {headerShown: false}},
@@ -48,21 +93,17 @@ const MainNavigator = createStackNavigator(
       screen: EditProfileScreen,
       navigationOptions: {headerShown: false},
     },
-    PetsListScreen: {
-      screen: PetsListScreen,
-      navigationOptions: {headerShown: false},
-    },
     NotificationDetailScreen: {
       screen: NotificationDetailScreen,
       navigationOptions: {headerShown: false},
     },
-    MeasureConfigScreen: {
-      screen: MeasureConfigScreen,
+    DrawerNavigatorScreen: {
+      screen: drawerNavigator,
       navigationOptions: {headerShown: false},
     },
   },
   {
-    initialRouteName: 'MeasureConfigScreen',
+    initialRouteName: 'FirstScreen',
     drawerPosition: 'left',
     drawerType: 'back',
     drawerWidth: function() {

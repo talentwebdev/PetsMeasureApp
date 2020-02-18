@@ -15,7 +15,11 @@ class HomeScreen extends Component {
               type="HomeButton"
               text="Measure Your Pet"
               style={styles.button}
-              onPress={() => {}}
+              onPress={() => {
+                this.props.navigation.navigate('DrawerNavigatorScreen', {
+                  page: 'PetsListScreen',
+                });
+              }}
             />
             <CustomButton
               type="HomeButton"

@@ -4,7 +4,14 @@ import {Image, StyleSheet, TouchableOpacity} from 'react-native';
 class MenuIcon extends Component {
   render() {
     return (
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          if (this.props.type === 'close') {
+            this.props.navigation.closeDrawer();
+            return;
+          }
+          this.props.navigation.openDrawer();
+        }}>
         <Image
           style={styles.menuIcon}
           source={require('./../../../assets/MENU.png')}

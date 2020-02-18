@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\My_Work\\ReactNative\\NativeModuleTest\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "E:\\My_Work\\ReactNative\\PetsMeasureApp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\3e92dff23d50d5c37d006cde440741b5\\res\\values-v23\\values-v23.xml",

@@ -2,7 +2,10 @@
   package="com.nativemoduletest">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- This tag indicates that this application requires ARCore.  This results in the application
+           only being visible in the Google Play Store on devices that support ARCore. -->
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
@@ -29,7 +32,20 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+        <activity
+            android:name=".ArMeasureActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+      <meta-data android:name="com.google.ar.core" android:value="required" />
+      <meta-data
+          android:name="io.fabric.ApiKey"
+          android:value="0b148442de0ebe36c4bf3cd5803e980c9e954a47" />
     </application>
 
 </manifest>

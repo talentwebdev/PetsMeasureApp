@@ -14,7 +14,7 @@ class LoginButton extends Component {
     return (
       <TouchableOpacity
         onPress={this.props.onPress}
-        style={[this.state.style, styles.button]}>
+        style={[styles.button, this.state.style]}>
         <Text style={styles.text}>{this.state.text}</Text>
       </TouchableOpacity>
     );

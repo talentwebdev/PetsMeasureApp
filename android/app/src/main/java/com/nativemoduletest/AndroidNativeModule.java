@@ -19,7 +19,7 @@ public class AndroidNativeModule extends ReactContextBaseJavaModule {
     public void show()
     {
         ReactApplicationContext context = getReactApplicationContext();
-        Intent intent = new Intent(context, TestActivity.class);
+        Intent intent = new Intent(context, ArMeasureActivity.class);
         context.startActivity(intent);
     }
 

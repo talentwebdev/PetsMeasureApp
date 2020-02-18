@@ -6,6 +6,7 @@ class CustomTextInput extends Component {
   render() {
     return (
       <TextInput
+        {...this.props}
         style={[this.props.style, styles.textInput]}
         autoComplete={
           this.props.autoComplete !== undefined ? this.props.autoComplete : ''
@@ -17,9 +18,9 @@ class CustomTextInput extends Component {
         }
         value={this.props.value !== undefined ? this.props.value : null}
         onChangeText={this.props.onChangeText}
-        securityTextEntry={
-          this.props.securityTextEntry !== undefined
-            ? this.props.securityTextEntry
+        secureTextEntry={
+          this.props.secureTextEntry !== undefined
+            ? this.props.secureTextEntry
             : false
         }
         placeholder={this.props.placeholder}

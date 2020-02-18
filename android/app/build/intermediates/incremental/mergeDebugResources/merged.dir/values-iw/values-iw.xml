@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="__arcore_cancel">ביטול</string>
+    <string name="__arcore_continue">המשך</string>
+    <string name="__arcore_install_app">האפליקציה הזו מחייבת את הגרסה האחרונה של שירותי Google Play למציאות רבודה.</string>
+    <string name="__arcore_install_feature">התכונה הזו מחייבת את הגרסה האחרונה של שירותי Google Play למציאות רבודה.</string>
+    <string name="__arcore_installing">מתבצעת התקנה של שירותי Google Play למציאות רבודה…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"ניווט לדף הבית"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"ניווט למעלה"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"עוד אפשרויות"</string>

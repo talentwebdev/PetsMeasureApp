@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="__arcore_cancel">ਰੱਦ ਕਰੋ</string>
+    <string name="__arcore_continue">ਜਾਰੀ ਰੱਖੋ</string>
+    <string name="__arcore_install_app">ਇਸ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ AR ਲਈ Google Play ਸੇਵਾਵਾਂ ਦੇ ਨਵੀਨਤਮ ਵਰਜਨ ਦੀ ਲੋੜ ਹੈ।</string>
+    <string name="__arcore_install_feature">ਇਸ ਵਿਸ਼ੇਸ਼ਤਾ ਨੂੰ AR ਲਈ Google Play ਸੇਵਾਵਾਂ ਦੇ ਨਵੀਨਤਮ ਵਰਜਨ ਦੀ ਲੋੜ ਹੈ।</string>
+    <string name="__arcore_installing">AR ਲਈ Google Play ਸੇਵਾਵਾਂ ਸਥਾਪਤ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"ਹੋਮ \'ਤੇ ਜਾਓ"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"ਉੱਪਰ ਜਾਓ"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"ਹੋਰ ਵਿਕਲਪ"</string>

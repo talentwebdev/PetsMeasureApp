@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="__arcore_cancel">বাতিল করুন</string>
+    <string name="__arcore_continue">এগিয়ে যান</string>
+    <string name="__arcore_install_app">এই অ্যাপ্লিকেশনটি ব্যবহার করার জন্য Google Play Services for AR-এর লেটেস্ট ভার্সন প্রয়োজন।</string>
+    <string name="__arcore_install_feature">এই ফিচারটি ব্যবহার করার জন্য Google Play Services for AR-এর লেটেস্ট ভার্সন প্রয়োজন।</string>
+    <string name="__arcore_installing">Google Play Services for AR ইনস্টল করা হচ্ছে…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"হোমে নেভিগেট করুন"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"উপরে নেভিগেট করুন"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"আরও বিকল্প"</string>

@@ -6,10 +6,12 @@ import {
   CustomButton,
   TitleText,
   BottomTab,
+  OpenDrawerComponent,
 } from './../../components';
 import {View, FlatList, StyleSheet} from 'react-native';
+import {StackActions, NavigationActions} from 'react-navigation';
 
-class PetsListScreen extends Component {
+class PetsListScreen extends OpenDrawerComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -28,7 +30,7 @@ class PetsListScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <MenuIcon />
+        <MenuIcon navigation={this.props.navigation} />
         <View style={styles.mainContainer}>
           <View style={styles.titleContainer}>
             <NormalText text="Lets Measure Your Pet for Travel" />
@@ -42,6 +44,18 @@ class PetsListScreen extends Component {
             style={styles.addNewPetButton}
             text="Add New Pet"
             type="NormalButton"
+            onPress={() => {
+              const resetAction = StackActions.reset({
+                index: 0,
+                actions: [
+                  NavigationActions.navigate({
+                    routeName: 'DrawerNavigatorScreen',
+                    params: {page: 'MeasureConfigScreen'},
+                  }),
+                ],
+              });
+              this.props.navigation.dispatch(resetAction);
+            }}
           />
         </View>
         <BottomTab plus={true} />

@@ -39,9 +39,19 @@ class BottomTab extends Component {
     return (
       <View style={styles.lastContainer}>
         {this.props.plus === true && !this.state.keyboardshow && (
-          <View style={styles.tabMenuContainer}>
+          <TouchableOpacity
+            onPress={() => {
+              if (this.props.onPlusPress !== undefined) {
+                this.props.onPlusPress();
+              }
+            }}
+            style={
+              this.props.absolute === true
+                ? styles.tabMenuContainer_absolute
+                : styles.tabMenuContainer
+            }>
             <Text style={styles.plusText}>+</Text>
-          </View>
+          </TouchableOpacity>
         )}
 
         {!this.state.keyboardshow && (
@@ -99,11 +109,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: '100%',
     marginBottom: 10,
+    zIndex: 1,
   },
   tabContainer: {
     width: '100%',
     flexDirection: 'row',
     justifyContent: 'center',
+    zIndex: 1,
   },
   imageContainer: {
     flex: 1,
@@ -138,10 +150,24 @@ const styles = StyleSheet.create({
     borderWidth: 4,
     borderColor: Colors.White,
     marginBottom: -25,
-    zIndex: 100,
+    zIndex: 1000,
+  },
+  tabMenuContainer_absolute: {
+    width: 50,
+    height: 50,
+    justifyContent: 'center',
+    backgroundColor: Colors.Red,
+    alignItems: 'center',
+    borderRadius: 40,
+    borderWidth: 4,
+    borderColor: Colors.White,
+    top: -25,
+    position: 'absolute',
+    zIndex: 1000,
   },
   lastContainer: {
     alignItems: 'center',
+    zIndex: 1000,
   },
 });
 export default BottomTab;

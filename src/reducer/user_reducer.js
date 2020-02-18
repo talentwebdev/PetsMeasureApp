@@ -1,10 +1,10 @@
-import Types from './../common/Common';
+import {UPDATE_USERDATA} from './../common/Common';
 
 const initState = {};
 
 function user_reducer(state = initState, action) {
   switch (action.type) {
-    case Types.UPDATE_USERDATA:
+    case UPDATE_USERDATA:
       state = {...state, ...action.payload};
       break;
     default:

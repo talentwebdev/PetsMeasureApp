@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="__arcore_cancel">ຍົກເລີກ</string>
+    <string name="__arcore_continue">ສືບຕໍ່</string>
+    <string name="__arcore_install_app">ແອັບພລິເຄຊັນນີ້ຕ້ອງໃຊ້ບໍລິການ Google Play ສຳລັບ AR ເວີຊັນຫຼ້າສຸດ.</string>
+    <string name="__arcore_install_feature">ຄຸນສົມບັດນີ້ຕ້ອງໃຊ້ບໍລິການ Google Play ສຳລັບ AR ເວີຊັນຫຼ້າສຸດ.</string>
+    <string name="__arcore_installing">ກຳລັງຕິດຕັ້ງບໍລິການ Google Play ສຳລັບ AR…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"ກັບໄປໜ້າຫຼັກ"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"ເລື່ອນຂຶ້ນເທິງ"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"ຕົວເລືອກເພີ່ມເຕີມ"</string>

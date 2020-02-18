@@ -1,6 +1,31 @@
 import React, {Component} from 'react';
 import {View, StyleSheet} from 'react-native';
 import {CustomButton, TitleText} from './../../components/index';
+import {PermissionsAndroid} from 'react-native';
+
+async function requestCameraPermission() {
+  try {
+    const granted = await PermissionsAndroid.request(
+      PermissionsAndroid.PERMISSIONS.CAMERA,
+      {
+        title: 'Cool Photo App Camera Permission',
+        message:
+          'Cool Photo App needs access to your camera ' +
+          'so you can take awesome pictures.',
+        buttonNeutral: 'Ask Me Later',
+        buttonNegative: 'Cancel',
+        buttonPositive: 'OK',
+      },
+    );
+    if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+      console.log('You can use the camera');
+    } else {
+      console.log('Camera permission denied');
+    }
+  } catch (err) {
+    console.warn(err);
+  }
+}
 
 class FirstScreen extends Component {
   constructor(props) {
@@ -8,9 +33,14 @@ class FirstScreen extends Component {
     this.state = {};
     this.onLoginButton = this.onLoginButton.bind(this);
     this.onRegisterButton = this.onRegisterButton.bind(this);
+    requestCameraPermission();
   }
-  onLoginButton() {}
-  onRegisterButton() {}
+  onLoginButton() {
+    this.props.navigation.navigate('LoginScreen');
+  }
+  onRegisterButton() {
+    this.props.navigation.navigate('RegisterScreen');
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -45,6 +75,7 @@ const styles = StyleSheet.create({
   titleText: {
     top: 80,
     position: 'absolute',
+    marginLeft: 10,
   },
   button: {
     marginBottom: 10,

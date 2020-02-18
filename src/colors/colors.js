@@ -4,4 +4,5 @@ export default {
   WhiteBlocak: '#06142D',
   Gray: '#506274',
   LightGray: '#E8EAF1',
+  DarkBlue: '#273D52',
 };

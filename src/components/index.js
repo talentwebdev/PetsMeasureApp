@@ -6,6 +6,8 @@ import MenuIcon from './MenuIcon/MenuIcon';
 import TextArea from './TextArea/TextArea';
 import Selectable from './Selectable/Selectable';
 import AgeSlider from './AgeSlider/AgeSlider';
+import OpenDrawerComponent from './OpenDrawerComponent/OpenDrawerComponent';
+import MeasureBackground from './MeasureBackground/MeasureBackground';
 export {
   CustomButton,
   TitleText,
@@ -17,4 +19,6 @@ export {
   TextArea,
   Selectable,
   AgeSlider,
+  OpenDrawerComponent,
+  MeasureBackground,
 };

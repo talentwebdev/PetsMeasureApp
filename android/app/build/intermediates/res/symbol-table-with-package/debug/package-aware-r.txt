@@ -1044,6 +1044,9 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id __arcore_cancelButton
+id __arcore_continueButton
+id __arcore_messageText
 id accessibility_action_clickable_span
 id accessibility_actions
 id accessibility_custom_action_0
@@ -1161,6 +1164,7 @@ id forever
 id fps_text
 id ghost_view
 id ghost_view_holder
+id gl_surface_view
 id group_divider
 id home
 id homeAsUp
@@ -1173,6 +1177,7 @@ id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
+id layout_main
 id left
 id line1
 id line3
@@ -1193,6 +1198,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id off
+id ok_button
 id on
 id outline
 id parallax
@@ -1284,6 +1290,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id txt_dist
 id unchecked
 id uniform
 id unlabeled
@@ -1323,6 +1330,7 @@ interpolator mtrl_fast_out_linear_in
 interpolator mtrl_fast_out_slow_in
 interpolator mtrl_linear
 interpolator mtrl_linear_out_slow_in
+layout __arcore_education
 layout abc_action_bar_title_item
 layout abc_action_bar_up_container
 layout abc_action_menu_item_layout
@@ -1351,6 +1359,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_measure
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1386,6 +1395,12 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw keep_arcore
+string __arcore_cancel
+string __arcore_continue
+string __arcore_install_app
+string __arcore_install_feature
+string __arcore_installing
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

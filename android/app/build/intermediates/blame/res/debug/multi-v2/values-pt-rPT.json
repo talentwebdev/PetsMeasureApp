@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\My_Work\\ReactNative\\NativeModuleTest\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
+            "outputFile": "E:\\My_Work\\ReactNative\\PetsMeasureApp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\32c5831461e4766ef4792e7a89acc090\\res\\values-pt-rPT\\values-pt-rPT.xml",
@@ -11,6 +11,30 @@
                         "startOffsets": "105,213,319,426,515,616,740,825,906,998,1091,1188,1282,1382,1476,1572,1667,1759,1851,1935,2042,2153,2255,2363,2471,2578,2749,2848",
                         "endColumns": "107,105,106,88,100,123,84,80,91,92,96,93,99,93,95,94,91,91,83,106,110,101,107,107,106,170,98,84",
                         "endOffsets": "208,314,421,510,611,735,820,901,993,1086,1183,1277,1377,1471,1567,1662,1754,1846,1930,2037,2148,2250,2358,2466,2573,2744,2843,2928"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "629,737,843,950,1039,1140,1264,1349,1430,1522,1615,1712,1806,1906,2000,2096,2191,2283,2375,2459,2566,2677,2779,2887,2995,3102,3273,3372",
+                        "endColumns": "107,105,106,88,100,123,84,80,91,92,96,93,99,93,95,94,91,91,83,106,110,101,107,107,106,170,98,84",
+                        "endOffsets": "732,838,945,1034,1135,1259,1344,1425,1517,1610,1707,1801,1901,1995,2091,2186,2278,2370,2454,2561,2672,2774,2882,2990,3097,3268,3367,3452"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\08795085a9116733259607ae183030d6\\res\\values-pt-rPT\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "194,243,295,438,590",
+                        "endColumns": "48,51,142,151,107",
+                        "endOffsets": "242,294,437,589,697"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "105,158,214,361,517",
+                        "endColumns": "52,55,146,155,111",
+                        "endOffsets": "153,209,356,512,624"
                     }
                 },
                 {
@@ -23,11 +47,11 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "30",
+                        "startLines": "35",
                         "startColumns": "4",
-                        "startOffsets": "2933",
+                        "startOffsets": "3457",
                         "endColumns": "100",
-                        "endOffsets": "3029"
+                        "endOffsets": "3553"
                     }
                 }
             ]

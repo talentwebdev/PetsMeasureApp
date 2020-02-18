@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="__arcore_cancel">Չեղարկել</string>
+    <string name="__arcore_continue">Շարունակել</string>
+    <string name="__arcore_install_app">Այս հավելվածից օգտվելու համար տեղադրեք «Google Play ծառայություններ AR-ի համար» հավելվածի վերջին տարբերակը:</string>
+    <string name="__arcore_install_feature">Այս գործառույթից օգտվելու համար տեղադրեք «Google Play ծառայություններ AR-ի համար» հավելվածի վերջին տարբերակը:</string>
+    <string name="__arcore_installing">«Google Play ծառայություններ AR-ի համար» հավելվածը տեղադրվում է…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Անցնել գլխավոր էջ"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Անցնել վերև"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Այլ ընտրանքներ"</string>
