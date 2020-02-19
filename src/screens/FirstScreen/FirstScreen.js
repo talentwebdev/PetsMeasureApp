@@ -2,6 +2,11 @@ import React, {Component} from 'react';
 import {View, StyleSheet} from 'react-native';
 import {CustomButton, TitleText} from './../../components/index';
 import {PermissionsAndroid} from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
+import {API_URL, _fetchEmail, _fetchPassword} from './../../common/Common';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {updateUserData} from './action';
 
 async function requestCameraPermission() {
   try {
@@ -35,12 +40,44 @@ class FirstScreen extends Component {
     this.onRegisterButton = this.onRegisterButton.bind(this);
     requestCameraPermission();
   }
+
   onLoginButton() {
     this.props.navigation.navigate('LoginScreen');
   }
   onRegisterButton() {
     this.props.navigation.navigate('RegisterScreen');
   }
+  componentDidMount() {
+    SplashScreen.hide();
+    this.login();
+  }
+  login = async () => {
+    const email = await _fetchEmail();
+    const password = await _fetchPassword();
+    console.log('FirstScreen', email, password);
+
+    fetch(API_URL + '/user/signin', {
+      method: 'POST',
+      body: JSON.stringify({
+        email: email,
+        password: password,
+      }),
+    })
+      .then(response => response.json())
+      .then(responsejson => {
+        if (responsejson.status === false) {
+          return;
+        }
+        this.props.updateUserData(responsejson.data);
+        this.props.navigation.navigate('HomeScreen');
+        console.log('FirstScreen login', responsejson, responsejson.status);
+
+        console.log('FirstScreen login', responsejson);
+      })
+      .catch(err => {
+        console.log('FirstScren login error', err);
+      });
+  };
   render() {
     return (
       <View style={styles.container}>
@@ -81,4 +118,17 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
 });
-export default FirstScreen;
+const mapStatesToProps = (state, props) => {
+  return {
+    ...props,
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return {
+    updateUserData: bindActionCreators(updateUserData, dispatch),
+  };
+};
+export default connect(
+  mapStatesToProps,
+  mapDispatchToProps,
+)(FirstScreen);

@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">Откажи</string>
     <string name="__arcore_continue">Продолжи</string>
-    <string name="__arcore_install_app">Апликацијава ја бара најновата верзија на „Услуги на Google Play за AR“.</string>
-    <string name="__arcore_install_feature">Функцијава ја бара најновата верзија на „Услуги на Google Play за AR“.</string>
-    <string name="__arcore_installing">Се инсталира „Услуги на Google Play за AR“…</string>
+    <string name="__arcore_install_app">Оваа апликација ја бара најновата верзија на ARCore.</string>
+    <string name="__arcore_install_feature">Оваа функција ја бара најновата верзија на ARCore.</string>
+    <string name="__arcore_installing">Се инсталира ARCore…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Движи се кон дома"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Движи се нагоре"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Повеќе опции"</string>

@@ -14,12 +14,15 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
+import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.ar.core.ArCoreApk;
 import com.google.ar.core.Camera;
 import com.google.ar.core.Config;
@@ -34,6 +37,7 @@ import com.google.ar.core.exceptions.UnavailableArcoreNotInstalledException;
 import com.google.ar.core.exceptions.UnavailableDeviceNotCompatibleException;
 import com.google.ar.core.exceptions.UnavailableSdkTooOldException;
 import com.google.ar.core.exceptions.UnavailableUserDeclinedInstallationException;
+import com.google.ar.core.examples.java.helloar.CameraPermissionHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,6 +54,7 @@ public class ArMeasureActivity extends Activity {
     private MainRenderer mRenderer;
 
     private boolean mUserRequestedInstall = true;
+    private Snackbar messageSnackbar = null;
 
     private Session mSession;
     private Config mConfig;
@@ -120,6 +125,7 @@ public class ArMeasureActivity extends Activity {
         mRenderer = new MainRenderer(this, new MainRenderer.RenderCallback() {
             @Override
             public void preRender() throws CameraNotAvailableException {
+                if(mSession == null) return;
                 if (mRenderer.isViewportChanged()) {
                     Display display = getWindowManager().getDefaultDisplay();
                     int displayRotation = display.getRotation();
@@ -178,12 +184,49 @@ public class ArMeasureActivity extends Activity {
         mSession.pause();
     }
 
+    private void showSnackbarMessage(String message, boolean finishOnDismiss) {
+        messageSnackbar =
+                Snackbar.make(
+                        ArMeasureActivity.this.findViewById(android.R.id.content),
+                        message,
+                        Snackbar.LENGTH_INDEFINITE);
+        messageSnackbar.getView().setBackgroundColor(0xbf323232);
+        if (finishOnDismiss) {
+            messageSnackbar.setAction(
+                    "Dismiss",
+                    new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            messageSnackbar.dismiss();
+                        }
+                    });
+            messageSnackbar.addCallback(
+                    new BaseTransientBottomBar.BaseCallback<Snackbar>() {
+                        @Override
+                        public void onDismissed(Snackbar transientBottomBar, int event) {
+                            super.onDismissed(transientBottomBar, event);
+                            finish();
+                        }
+                    });
+        }
+        messageSnackbar.show();
+    }
+
     @Override
     protected void onResume() {
         super.onResume();
+        if(mSession == null)
+        {
+            Exception exception = null;
+            String message = null;
+            try {
+                // ARCore requires camera permissions to operate. If we did not yet obtain runtime
+                // permission on Android M and above, now is a good time to ask the user for it.
+                if (!CameraPermissionHelper.hasCameraPermission(this)) {
+                    CameraPermissionHelper.requestCameraPermission(this);
+                    return;
+                }
 
-        try {
-            if (mSession == null) {
                 switch (ArCoreApk.getInstance().requestInstall(this, mUserRequestedInstall)) {
                     case INSTALLED:
                         mSession = new Session(this);
@@ -194,33 +237,40 @@ public class ArMeasureActivity extends Activity {
                         Log.d(TAG, "ARCore should be installed.");
                         break;
                 }
+            }catch (UnavailableArcoreNotInstalledException
+                    | UnavailableUserDeclinedInstallationException e) {
+                message = "Please install ARCore";
+                exception = e;
+            } catch (UnavailableApkTooOldException e) {
+                message = "Please update ARCore";
+                exception = e;
+            } catch (UnavailableSdkTooOldException e) {
+                message = "Please update this app";
+                exception = e;
+            } catch (Exception e) {
+                message = "This device does not support AR";
+                exception = e;
             }
-        }
-        catch (UnsupportedOperationException e) {
-            Log.e(TAG, e.getMessage());
-        } catch (UnavailableApkTooOldException e) {
-            e.printStackTrace();
-        } catch (UnavailableDeviceNotCompatibleException e) {
-            e.printStackTrace();
-        } catch (UnavailableUserDeclinedInstallationException e) {
-            e.printStackTrace();
-        } catch (UnavailableArcoreNotInstalledException e) {
-            e.printStackTrace();
-        } catch (UnavailableSdkTooOldException e) {
-            e.printStackTrace();
-        }
 
-        mConfig = new Config(mSession);
-        if (!mSession.isSupported(mConfig)) {
-            Log.d(TAG, "This device is not support ARCore.");
+            if (message != null) {
+                showSnackbarMessage(message, true);
+                Log.e(TAG, "Exception creating session", exception);
+                return;
+            }
+
+            mConfig = new Config(mSession);
+            if (!mSession.isSupported(mConfig)) {
+                showSnackbarMessage("This device does not support AR", true);
+            }
+
+            mSession.configure(mConfig);
         }
-        mSession.configure(mConfig);
+        
         try {
             mSession.resume();
         } catch (CameraNotAvailableException e) {
             e.printStackTrace();
         }
-
         mSurfaceView.onResume();
     }
 

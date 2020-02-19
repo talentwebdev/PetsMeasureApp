@@ -44,7 +44,7 @@ class EditProfileScreen extends Component {
             type="NormalButton"
           />
         </View>
-        <BottomTab />
+        <BottomTab navigation={this.props.navigation} />
       </View>
     );
   }

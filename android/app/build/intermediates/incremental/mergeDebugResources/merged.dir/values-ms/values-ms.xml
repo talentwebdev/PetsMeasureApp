@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">Batal</string>
     <string name="__arcore_continue">Teruskan</string>
-    <string name="__arcore_install_app">Aplikasi ini memerlukan versi terbaharu Google Play Services for AR.</string>
-    <string name="__arcore_install_feature">Ciri ini memerlukan versi terbaharu Google Play Services for AR.</string>
-    <string name="__arcore_installing">Memasang Google Play Services for AR…</string>
+    <string name="__arcore_install_app">Aplikasi ini memerlukan versi ARCore yang terbaharu.</string>
+    <string name="__arcore_install_feature">Ciri ini memerlukan versi ARCore yang terbaharu.</string>
+    <string name="__arcore_installing">Memasang ARCore…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Navigasi laman utama"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Navigasi ke atas"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Lagi pilihan"</string>

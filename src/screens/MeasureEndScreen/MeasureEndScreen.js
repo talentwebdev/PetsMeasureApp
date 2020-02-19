@@ -76,7 +76,7 @@ class MeasureEndScreen extends Component {
             />
           </MeasureBackground>
         </View>
-        <BottomTab />
+        <BottomTab navigation={this.props.navigation} />
       </View>
     );
   }

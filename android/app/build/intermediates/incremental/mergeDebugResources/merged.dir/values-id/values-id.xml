@@ -2,7 +2,7 @@
 <resources>
     <string name="__arcore_cancel">Batal</string>
     <string name="__arcore_continue">Lanjutkan</string>
-    <string name="__arcore_install_app">Aplikasi ini memerlukan versi terbaru Layanan Google Play untuk AR.</string>
-    <string name="__arcore_install_feature">Fitur ini memerlukan versi terbaru Layanan Google Play untuk AR.</string>
-    <string name="__arcore_installing">Menginstal Layanan Google Play untuk AR…</string>
+    <string name="__arcore_install_app">Aplikasi ini memerlukan versi ARCore terbaru.</string>
+    <string name="__arcore_install_feature">Fitur ini memerlukan versi ARCore terbaru.</string>
+    <string name="__arcore_installing">Menginstal ARCore…</string>
 </resources>

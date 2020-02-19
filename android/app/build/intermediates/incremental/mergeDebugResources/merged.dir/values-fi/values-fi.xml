@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">Peruuta</string>
     <string name="__arcore_continue">Jatka</string>
-    <string name="__arcore_install_app">Tämän sovelluksen käyttö edellyttää Google Play Services for AR:n uusinta versiota.</string>
-    <string name="__arcore_install_feature">Tämän ominaisuuden käyttö edellyttää Google Play Services for AR:n uusinta versiota.</string>
-    <string name="__arcore_installing">Asennetaan Google Play Services for AR:ää…</string>
+    <string name="__arcore_install_app">Tämän sovelluksen käyttöön vaaditaan ARCoren uusin versio.</string>
+    <string name="__arcore_install_feature">Tämän ominaisuuden käyttöön vaaditaan ARCoren uusin versio.</string>
+    <string name="__arcore_installing">Asennetaan ARCorea…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Siirry etusivulle"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Siirry ylös"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Lisäasetukset"</string>

@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">Cancel·la</string>
     <string name="__arcore_continue">Continua</string>
-    <string name="__arcore_install_app">Cal la darrera versió de Serveis de Google Play per a RA per utilitzar aquesta aplicació.</string>
-    <string name="__arcore_install_feature">Cal la darrera versió de Serveis de Google Play per a RA per utilitzar aquesta funció.</string>
-    <string name="__arcore_installing">S\'està instal·lant Serveis de Google Play per a RA…</string>
+    <string name="__arcore_install_app">Aquesta aplicació necessita la darrera versió d\'ARCore.</string>
+    <string name="__arcore_install_feature">Aquesta funció necessita la darrera versió d\'ARCore.</string>
+    <string name="__arcore_installing">S\'està instal·lant ARCore…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Navega a la pàgina d\'inici"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Navega cap amunt"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Més opcions"</string>

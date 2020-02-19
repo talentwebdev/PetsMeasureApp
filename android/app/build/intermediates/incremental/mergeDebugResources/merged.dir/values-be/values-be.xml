@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">Скасаваць</string>
     <string name="__arcore_continue">Далей</string>
-    <string name="__arcore_install_app">Для гэтай праграмы патрабуецца апошняя версія Сэрвісаў Google Play для AR.</string>
-    <string name="__arcore_install_feature">Для гэтай функцыі патрабуецца апошняя версія Сэрвісаў Google Play для AR.</string>
-    <string name="__arcore_installing">Усталёўваюцца Сэрвісы Google Play для AR…</string>
+    <string name="__arcore_install_app">Для гэтай праграмы патрабуецца найноўшая версія ARCore.</string>
+    <string name="__arcore_install_feature">Для гэтай функцыі патрабуецца найноўшая версія ARCore.</string>
+    <string name="__arcore_installing">Усталяванне ARCore…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Перайсці на галоўную старонку"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Перайсці ўверх"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Дадатковыя параметры"</string>

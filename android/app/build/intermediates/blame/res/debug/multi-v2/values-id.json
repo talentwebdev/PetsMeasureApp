@@ -4,20 +4,20 @@
             "outputFile": "E:\\My_Work\\ReactNative\\PetsMeasureApp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\08795085a9116733259607ae183030d6\\res\\values-id\\values.xml",
+                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\5407864f1bc193ef00a5ea4840543231\\res\\values-id\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",
-                        "startOffsets": "190,236,288,401,515",
-                        "endColumns": "45,51,112,113,84",
-                        "endOffsets": "235,287,400,514,599"
+                        "startOffsets": "190,236,288,379,471",
+                        "endColumns": "45,51,90,91,62",
+                        "endOffsets": "235,287,378,470,533"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6",
                         "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,105,161,278,396",
-                        "endColumns": "49,55,116,117,88",
-                        "endOffsets": "100,156,273,391,480"
+                        "startOffsets": "55,105,161,256,352",
+                        "endColumns": "49,55,94,95,66",
+                        "endOffsets": "100,156,251,347,414"
                     }
                 }
             ]

@@ -299,7 +299,7 @@ class MeasureConfigScreen extends OpenDrawerComponent {
             onPress={this.onGetStarted}
           />
         </ScrollView>
-        <BottomTab />
+        <BottomTab navigation={this.props.navigation} />
       </View>
     );
   }

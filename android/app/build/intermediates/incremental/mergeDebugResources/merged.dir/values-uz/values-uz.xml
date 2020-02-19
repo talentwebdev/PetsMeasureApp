@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">Bekor qilish</string>
     <string name="__arcore_continue">Davom etish</string>
-    <string name="__arcore_install_app">Bu ilovadan foydalanish uchun AR uchun Google Play xizmatlarining eng oxirigi versiyasini o‘rnating.</string>
-    <string name="__arcore_install_feature">Bu funksiyadan foydalanish uchun AR uchun Google Play xizmatlarining eng oxirigi versiyasini o‘rnating.</string>
-    <string name="__arcore_installing">AR uchun Google Play xizmatlari o‘rnatilmoqda…</string>
+    <string name="__arcore_install_app">Bu ilova ARCorening eng so‘nggi versiyasini o‘rnatishni talab qiladi.</string>
+    <string name="__arcore_install_feature">Bu xususiyat ARCorening eng so‘nggi versiyasini o‘rnatishni talab qiladi.</string>
+    <string name="__arcore_installing">ARCore o‘rnatilmoqda…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Boshiga o‘tish"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Yopish"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Yana"</string>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="__arcore_cancel">रद्द करा</string>
+    <string name="__arcore_continue">सुरू ठेवा</string>
+    <string name="__arcore_install_app">या अॅप्लिकेशनला ARCore ची नवीनतम आवृत्‍ती लागू शकते.</string>
+    <string name="__arcore_install_feature">या वैशिष्‍ट्याला ARCore ची नवीनतम आवृत्‍ती लागू शकते.</string>
+    <string name="__arcore_installing">ARCore इंस्टॉल होत आहे…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"घराकडे नेव्हिगेट करा"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"वर नेव्‍हिगेट करा"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"आणखी पर्याय"</string>

@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">İptal</string>
     <string name="__arcore_continue">Devam</string>
-    <string name="__arcore_install_app">Bu uygulamanın kullanılabilmesi için AR için Google Play Hizmetleri\'nin son sürümü gereklidir.</string>
-    <string name="__arcore_install_feature">Bu özelliğin kullanılabilmesi için AR için Google Play Hizmetleri\'nin son sürümü gereklidir.</string>
-    <string name="__arcore_installing">AR için Google Play Hizmetleri yükleniyor…</string>
+    <string name="__arcore_install_app">Bu uygulamanın çalışması için ARCore\'un son sürümü gerekli.</string>
+    <string name="__arcore_install_feature">Bu özelliğin kullanılabilmesi için ARCore\'un son sürümü gerekli.</string>
+    <string name="__arcore_installing">ARCore yükleniyor…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Eve gidiş yolunu göster"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Yukarı git"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Diğer seçenekler"</string>

@@ -27,6 +27,7 @@ class MeasureDescriptionScreen extends Component {
         <BottomTab
           plus={true}
           absolute={true}
+          navigation={this.props.navigation}
           onPlusPress={() => {
             const resetAction = StackActions.reset({
               index: 0,

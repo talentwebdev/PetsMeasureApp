@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">Zrušiť</string>
     <string name="__arcore_continue">Pokračovať</string>
-    <string name="__arcore_install_app">Táto aplikácia vyžaduje najnovšiu verziu Služieb Google Play pre RR.</string>
-    <string name="__arcore_install_feature">Táto funkcia vyžaduje najnovšiu verziu Služieb Google Play pre RR.</string>
-    <string name="__arcore_installing">Inštalujú sa Služby Google Play pre RR…</string>
+    <string name="__arcore_install_app">Táto aplikácia si vyžaduje najnovšiu verziu platformy ARCore.</string>
+    <string name="__arcore_install_feature">Táto funkcia si vyžaduje najnovšiu verziu platformy ARCore.</string>
+    <string name="__arcore_installing">Inštaluje sa platforma ARCore…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Prejsť na plochu"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Prejsť nahor"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Ďalšie možnosti"</string>

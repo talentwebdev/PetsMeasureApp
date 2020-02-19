@@ -12,8 +12,8 @@ class MyProfileScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TitleText style={styles.titleText} first="My " second="Profile" />
         <View style={styles.mainContainer}>
+          <TitleText style={styles.titleText} first="My " second="Profile" />
           <TextInputTitleText style={styles.normalText} text="Name" />
           <CustomTextInput style={styles.textInput} placeholder="Full Name" />
           <TextInputTitleText style={styles.normalText} text="Address" />
@@ -31,7 +31,7 @@ class MyProfileScreen extends Component {
             type="NormalButton"
           />
         </View>
-        <BottomTab />
+        <BottomTab navigation={this.props.navigation} />
       </View>
     );
   }
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   titleText: {
-    marginTop: 20,
+    marginBottom: 40,
     paddingLeft: 10,
   },
   editProfileButton: {

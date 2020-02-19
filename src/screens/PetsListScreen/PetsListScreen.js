@@ -10,31 +10,83 @@ import {
 } from './../../components';
 import {View, FlatList, StyleSheet} from 'react-native';
 import {StackActions, NavigationActions} from 'react-navigation';
+import Spinner from 'react-native-loading-spinner-overlay';
+import Colors from './../../colors/colors';
+import {API_URL} from './../../common/Common';
+import {connect} from 'react-redux';
 
 class PetsListScreen extends OpenDrawerComponent {
   constructor(props) {
     super(props);
     this.state = {
-      pets: [{title: 'Name', key: '123'}],
+      pets: [],
+      loader: false,
     };
     this.renderItem = this.renderItem.bind(this);
+    this.onClickPet = this.onClickPet.bind(this);
+    const {navigation} = this.props;
+    if (navigation.getParam('page') === 'PetsListScreen') {
+      this.state = {
+        pets: [],
+        loader: true,
+      };
+      fetch(API_URL + '/pet/fetchall/', {
+        method: 'POST',
+        body: JSON.stringify({
+          authorization: props.user.token,
+        }),
+      })
+        .then(response => response.json())
+        .then(responsejson => {
+          this.setState({loader: false});
+          console.log('fetchall success', responsejson);
+          if (responsejson.status === true) {
+            this.setState({pets: [...responsejson.data]});
+            console.log('state', this.state);
+          }
+        })
+        .catch(err => {
+          console.log('fetchall failed', err);
+          this.setState({loader: false});
+        });
+    }
+  }
+  componentDidMount() {}
+  onClickPet(pet) {
+    const resetAction = StackActions.reset({
+      index: 0,
+      actions: [
+        NavigationActions.navigate({
+          routeName: 'DrawerNavigatorScreen',
+          params: {page: 'PetDetailScreen', data: pet},
+        }),
+      ],
+    });
+    this.props.navigation.dispatch(resetAction);
   }
   renderItem = item => {
     console.log('item', item);
     return (
-      <View key={item.item.key} style={styles.listItemContainer}>
-        <CustomButton type="NormalButton" text={item.item.title} />
+      <View key={item.item.id} style={styles.listItemContainer}>
+        <CustomButton
+          onPress={() => {
+            this.onClickPet(item.item);
+          }}
+          type="NormalButton"
+          text={item.item.pet_name}
+        />
       </View>
     );
   };
   render() {
     return (
       <View style={styles.container}>
+        <Spinner visible={this.state.loader} color={Colors.Red} />
         <MenuIcon navigation={this.props.navigation} />
         <View style={styles.mainContainer}>
           <View style={styles.titleContainer}>
             <NormalText text="Lets Measure Your Pet for Travel" />
-            <TitleText first="Welcome " second="Jasmin R. Zirkle" />
+            <TitleText first="Welcome " second={this.props.user.full_name} />
           </View>
           <View style={styles.petsListContainer}>
             <TextInputTitleText text="Pets" />
@@ -58,7 +110,7 @@ class PetsListScreen extends OpenDrawerComponent {
             }}
           />
         </View>
-        <BottomTab plus={true} />
+        <BottomTab navigation={this.props.navigation} plus={true} />
       </View>
     );
   }
@@ -86,4 +138,10 @@ const styles = StyleSheet.create({
   },
   addNewPetButton: {},
 });
-export default PetsListScreen;
+const mapStatesToProps = (state, props) => {
+  return {
+    ...props,
+    user: state.user,
+  };
+};
+export default connect(mapStatesToProps)(PetsListScreen);

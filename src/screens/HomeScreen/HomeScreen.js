@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {TitleText, CustomButton} from './../../components';
 import {View, StyleSheet} from 'react-native';
+import {navigateDrawerScreen} from './../../common/Common';
 
 class HomeScreen extends Component {
   render() {
@@ -16,16 +17,16 @@ class HomeScreen extends Component {
               text="Measure Your Pet"
               style={styles.button}
               onPress={() => {
-                this.props.navigation.navigate('DrawerNavigatorScreen', {
-                  page: 'PetsListScreen',
-                });
+                navigateDrawerScreen('PetsListScreen', this.props);
               }}
             />
             <CustomButton
               type="HomeButton"
               text="About Us"
               style={styles.button}
-              onPress={() => {}}
+              onPress={() => {
+                navigateDrawerScreen('AboutUsScreen', this.props);
+              }}
             />
           </View>
           <View style={styles.buttonGroup}>
@@ -33,13 +34,17 @@ class HomeScreen extends Component {
               type="HomeButton"
               text="Notifications"
               style={styles.button}
-              onPress={() => {}}
+              onPress={() => {
+                navigateDrawerScreen('NotificationsScreen', this.props);
+              }}
             />
             <CustomButton
               type="HomeButton"
               text="Contact Us"
               style={styles.button}
-              onPress={() => {}}
+              onPress={() => {
+                navigateDrawerScreen('ContactUsScreen', this.props);
+              }}
             />
           </View>
           <View style={styles.buttonGroup}>
@@ -47,13 +52,17 @@ class HomeScreen extends Component {
               type="HomeButton"
               text="My Profile"
               style={styles.button}
-              onPress={() => {}}
+              onPress={() => {
+                this.props.navigation.navigate('MyProfileScreen');
+              }}
             />
             <CustomButton
               style={styles.button}
               type="HomeButton"
               text="Logout"
-              onPress={() => {}}
+              onPress={() => {
+                this.props.navigation.navigate('LoginScreen');
+              }}
             />
           </View>
         </View>

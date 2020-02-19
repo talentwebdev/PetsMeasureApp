@@ -7,7 +7,7 @@ import {
   CustomTextInput,
   CustomButton,
 } from './../../components';
-import {API_URL} from './../../common/Common';
+import {API_URL, _storeEmail, _storePassword} from './../../common/Common';
 import ValidationComponent from 'react-native-form-validator';
 import Spinner from 'react-native-loading-spinner-overlay';
 import Colors from './../../colors/colors';
@@ -19,12 +19,12 @@ class RegisterScreen extends ValidationComponent {
   constructor(props) {
     super(props);
     this.state = {
-      full_name: 'zhuping jin',
-      address: 'shenyang',
-      contact_number: '123456',
-      email: 'zhuping.kp@gmail.com',
-      password: 'password',
-      confirmpassword: 'password',
+      full_name: '',
+      address: '',
+      contact_number: '',
+      email: '',
+      password: '',
+      confirmpassword: '',
       keyboardshow: false,
       loader: false,
     };
@@ -74,12 +74,15 @@ class RegisterScreen extends ValidationComponent {
         .then(response => response.json())
         .then(responsejson => {
           this.setState({loader: false});
+          console.log('Register', responsejson);
           if (responsejson.status === false) {
             alert('Can not sign up');
             return;
           }
           this.props.updateUserData(responsejson.data);
-          this.props.navigation.navigation('HomeScreen');
+          this.props.navigation.navigate('HomeScreen');
+          _storeEmail(this.state.email);
+          _storePassword(this.state.password);
         })
         .catch(err => {
           this.setState({loader: false});

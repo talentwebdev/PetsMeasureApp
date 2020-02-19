@@ -14,7 +14,7 @@ class ContactUsScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <MenuIcon />
+        <MenuIcon navigation={this.props.navigation} />
         <View style={styles.mainContent}>
           <TitleText
             style={styles.titleText}
@@ -34,7 +34,7 @@ class ContactUsScreen extends Component {
           />
           <CustomButton text="Send" type="NormalButton" />
         </View>
-        <BottomTab />
+        <BottomTab navigation={this.props.navigation} />
       </View>
     );
   }

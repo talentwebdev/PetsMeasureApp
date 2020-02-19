@@ -10,7 +10,7 @@ import {
   CustomButton,
 } from '../../components';
 import ValidationComponent from 'react-native-form-validator';
-import {API_URL} from './../../common/Common';
+import {API_URL, _storeEmail, _storePassword} from './../../common/Common';
 import Spinner from 'react-native-loading-spinner-overlay';
 import Colors from './../../colors/colors';
 import {connect} from 'react-redux';
@@ -20,9 +20,10 @@ import {updateUserData} from './action';
 class LoginScreen extends ValidationComponent {
   constructor(props) {
     super(props);
+
     this.state = {
-      email: 'zhuping.kp@gmail.com',
-      password: 'password',
+      email: '',
+      password: '',
       keyboardshow: false,
       loader: false,
     };
@@ -37,7 +38,6 @@ class LoginScreen extends ValidationComponent {
 
     this.onLogin = this.onLogin.bind(this);
   }
-  componentDidMount() {}
   componentWillUnmount() {
     this.onKeyboardShow.remove();
     this.onKeyboardHide.remove();
@@ -48,7 +48,7 @@ class LoginScreen extends ValidationComponent {
   handleKeyboardHide = event => {
     this.setState({keyboardshow: false});
   };
-  onLogin() {
+  onLogin(email, password) {
     this.validate({
       email: {email: true},
       password: {minLenth: 5, required: true},
@@ -71,6 +71,8 @@ class LoginScreen extends ValidationComponent {
           }
           this.props.updateUserData(responsejson.data);
           this.props.navigation.navigate('HomeScreen');
+          _storeEmail(this.state.email);
+          _storePassword(this.state.password);
         })
         .catch(err => {
           this.setState({loader: false});

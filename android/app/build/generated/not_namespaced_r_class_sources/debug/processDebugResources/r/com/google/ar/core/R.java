@@ -21,11 +21,6 @@ public final class R {
 
         public static final int __arcore_education = 0x7f0b0000;
     }
-    public static final class raw {
-        private raw() {}
-
-        public static final int keep_arcore = 0x7f0d0000;
-    }
     public static final class string {
         private string() {}
 

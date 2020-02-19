@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">ರದ್ದು</string>
     <string name="__arcore_continue">ಮುಂದುವರಿಸಿ</string>
-    <string name="__arcore_install_app">ಈ ಆ್ಯಪ್‌ಗೆ AR ಗಾಗಿ Google Play ಸೇವೆಗಳ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯ ಅಗತ್ಯವಿದೆ.</string>
-    <string name="__arcore_install_feature">ಈ ವೈಶಿಷ್ಟ್ಯಕ್ಕೆ AR ಗಾಗಿ Google Play ಸೇವೆಗಳ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯ ಅಗತ್ಯವಿದೆ.</string>
-    <string name="__arcore_installing">AR ಗಾಗಿ Google Play ಸೇವೆಗಳನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲಾಗುತ್ತಿದೆ…</string>
+    <string name="__arcore_install_app">ಈ ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ARCore ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯ ಅಗತ್ಯವಿದೆ.</string>
+    <string name="__arcore_install_feature">ಈ ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ARCore ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯ ಅಗತ್ಯವಿದೆ.</string>
+    <string name="__arcore_installing">ARCore ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲಾಗುತ್ತಿದೆ…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"ಹೋಮ್‌ಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"ಮೇಲಕ್ಕೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"ಇನ್ನಷ್ಟು ಆಯ್ಕೆಗಳು"</string>

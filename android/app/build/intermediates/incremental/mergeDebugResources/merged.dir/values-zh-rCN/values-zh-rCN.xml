@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">取消</string>
     <string name="__arcore_continue">继续</string>
-    <string name="__arcore_install_app">需要安装最新版本的“面向 AR 的 Google Play 服务”才能使用此应用。</string>
-    <string name="__arcore_install_feature">需要安装最新版本的“面向 AR 的 Google Play 服务”才能使用此功能。</string>
-    <string name="__arcore_installing">正在安装“面向 AR 的 Google Play 服务”…</string>
+    <string name="__arcore_install_app">您必须安装最新版本的 ARCore 才能使用此应用。</string>
+    <string name="__arcore_install_feature">您必须安装最新版本的 ARCore 才能使用此功能。</string>
+    <string name="__arcore_installing">正在安装 ARCore…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"转到首页"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"转到上一层级"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"更多选项"</string>

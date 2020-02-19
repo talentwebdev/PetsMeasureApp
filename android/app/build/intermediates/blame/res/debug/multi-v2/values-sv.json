@@ -4,6 +4,23 @@
             "outputFile": "E:\\My_Work\\ReactNative\\PetsMeasureApp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\5407864f1bc193ef00a5ea4840543231\\res\\values-sv\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,237,288,390,501",
+                        "endColumns": "46,50,101,110,64",
+                        "endOffsets": "236,287,389,500,565"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "105,156,211,317,432",
+                        "endColumns": "50,54,105,114,68",
+                        "endOffsets": "151,206,312,427,496"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\29e9d019a65e94f59336973af751444b\\res\\values-sv\\values-sv.xml",
                     "from": {
                         "startLines": "2",
@@ -15,9 +32,9 @@
                     "to": {
                         "startLines": "35",
                         "startColumns": "4",
-                        "startOffsets": "3316",
+                        "startOffsets": "3253",
                         "endColumns": "100",
-                        "endOffsets": "3412"
+                        "endOffsets": "3349"
                     }
                 },
                 {
@@ -32,26 +49,9 @@
                     "to": {
                         "startLines": "7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "564,667,770,881,965,1067,1180,1257,1333,1426,1520,1615,1709,1812,1907,2004,2102,2198,2291,2370,2476,2575,2671,2776,2879,2981,3135,3237",
+                        "startOffsets": "501,604,707,818,902,1004,1117,1194,1270,1363,1457,1552,1646,1749,1844,1941,2039,2135,2228,2307,2413,2512,2608,2713,2816,2918,3072,3174",
                         "endColumns": "102,102,110,83,101,112,76,75,92,93,94,93,102,94,96,97,95,92,78,105,98,95,104,102,101,153,101,78",
-                        "endOffsets": "662,765,876,960,1062,1175,1252,1328,1421,1515,1610,1704,1807,1902,1999,2097,2193,2286,2365,2471,2570,2666,2771,2874,2976,3130,3232,3311"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\08795085a9116733259607ae183030d6\\res\\values-sv\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8",
-                        "startColumns": "0,0,0,0,0",
-                        "startOffsets": "190,237,288,411,543",
-                        "endColumns": "46,50,122,131,85",
-                        "endOffsets": "236,287,410,542,628"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "105,156,211,338,474",
-                        "endColumns": "50,54,126,135,89",
-                        "endOffsets": "151,206,333,469,559"
+                        "endOffsets": "599,702,813,897,999,1112,1189,1265,1358,1452,1547,1641,1744,1839,1936,2034,2130,2223,2302,2408,2507,2603,2708,2811,2913,3067,3169,3248"
                     }
                 }
             ]

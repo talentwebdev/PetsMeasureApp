@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">Hủy</string>
     <string name="__arcore_continue">Tiếp tục</string>
-    <string name="__arcore_install_app">Ứng dụng này yêu cầu phiên bản mới nhất của Dịch vụ Google Play cho Thực tế tăng cường.</string>
-    <string name="__arcore_install_feature">Tính năng này yêu cầu phiên bản mới nhất của Dịch vụ Google Play cho Thực tế tăng cường.</string>
-    <string name="__arcore_installing">Đang cài đặt Dịch vụ Google Play cho Thực tế tăng cường…</string>
+    <string name="__arcore_install_app">Ứng dụng này cần có phiên bản ARCore mới nhất.</string>
+    <string name="__arcore_install_feature">Tính năng này cần có phiên bản ARCore mới nhất.</string>
+    <string name="__arcore_installing">Installing ARCore…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Chỉ đường về nhà"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Di chuyển lên"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Tùy chọn khác"</string>

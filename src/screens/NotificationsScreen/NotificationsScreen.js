@@ -54,7 +54,7 @@ class NotificationsScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <MenuIcon />
+        <MenuIcon navigation={this.props.navigation} />
         <TitleText
           first="Your "
           second="Notifications"
@@ -63,7 +63,7 @@ class NotificationsScreen extends Component {
         <View style={styles.listContainer}>
           <FlatList data={this.state.items} renderItem={this.renderItem} />
         </View>
-        <BottomTab />
+        <BottomTab navigation={this.props.navigation} />
       </View>
     );
   }

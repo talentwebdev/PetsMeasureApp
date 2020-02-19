@@ -7,7 +7,7 @@ class NotificationDetailScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <MenuIcon />
+        <MenuIcon navigation={this.props.navigation} />
         <View style={styles.mainContainer}>
           <TitleText
             style={styles.titleText}
@@ -19,7 +19,7 @@ class NotificationDetailScreen extends Component {
             <Text style={styles.notificationMessage}>Notification message</Text>
           </View>
         </View>
-        <BottomTab />
+        <BottomTab navigation={this.props.navigation} />
       </View>
     );
   }

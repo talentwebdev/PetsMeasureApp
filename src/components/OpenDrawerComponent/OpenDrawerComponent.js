@@ -17,6 +17,12 @@ class OpenDrawerComponent extends Component {
         });
         return;
       }
+      if (navigation.getParam('page') === 'PetDetailScreen') {
+        navigation.navigate(navigation.getParam('page'), {
+          data: navigation.getParam('data'),
+        });
+        return;
+      }
       navigation.navigate(navigation.getParam('page'));
     }
   }

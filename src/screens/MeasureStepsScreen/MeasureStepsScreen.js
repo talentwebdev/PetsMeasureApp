@@ -84,6 +84,7 @@ class MeasureStepsScreen extends Component {
           </MeasureBackground>
         </View>
         <BottomTab
+          navigation={this.props.navigation}
           plus={true}
           absolute={true}
           onPlusPress={() => {

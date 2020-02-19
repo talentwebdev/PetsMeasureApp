@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   Text,
 } from 'react-native';
+import {navigateDrawerScreen} from './../../common/Common';
 
 class BottomTab extends Component {
   constructor(props) {
@@ -58,7 +59,10 @@ class BottomTab extends Component {
           <View style={styles.container}>
             <View style={styles.tabContainer}>
               <View style={styles.imageContainer}>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => {
+                    this.props.navigation.navigate('HomeScreen');
+                  }}>
                   <Image
                     style={styles.leftImage}
                     source={require('./../../../assets/house.png')}
@@ -66,7 +70,10 @@ class BottomTab extends Component {
                 </TouchableOpacity>
               </View>
               <View style={styles.imageContainer}>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => {
+                    navigateDrawerScreen('AboutUsScreen', this.props);
+                  }}>
                   <Image
                     style={styles.leftImage}
                     source={require('./../../../assets/info.png')}
@@ -74,7 +81,10 @@ class BottomTab extends Component {
                 </TouchableOpacity>
               </View>
               <View style={styles.imageContainer}>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => {
+                    navigateDrawerScreen('NotificationsScreen', this.props);
+                  }}>
                   <Image
                     style={styles.rightImage}
                     source={require('./../../../assets/bell.png')}
@@ -82,7 +92,10 @@ class BottomTab extends Component {
                 </TouchableOpacity>
               </View>
               <View style={styles.imageContainer}>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => {
+                    navigateDrawerScreen('ContactUsScreen', this.props);
+                  }}>
                   <Image
                     style={styles.rightImage}
                     source={require('./../../../assets/contact.png')}

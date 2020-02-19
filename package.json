@@ -1,5 +1,5 @@
 {
-  "name": "NativeModuleTest",
+  "name": "PetsMeasure",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.8.0",
     "@react-native-community/cli-platform-android": "^4.0.2",
     "@react-native-community/masked-view": "^0.1.6",
     "@react-native-community/slider": "^2.0.8",
@@ -18,13 +19,16 @@
     "jetifier": "^1.6.5",
     "react": "16.9.0",
     "react-native": "0.61.5",
+    "react-native-firebase": "^5.6.0",
     "react-native-form-validator": "^0.3.2",
     "react-native-gesture-handler": "^1.6.0",
     "react-native-loading-spinner-overlay": "^1.0.1",
+    "react-native-push-notification": "^3.1.9",
     "react-native-reanimated": "^1.7.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.0.0-beta.4",
     "react-native-simple-radio-button": "^2.7.4",
+    "react-native-splash-screen": "^3.2.0",
     "react-navigation": "^4.1.1",
     "react-navigation-drawer": "^2.3.4",
     "react-navigation-stack": "^2.1.1",

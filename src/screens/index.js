@@ -15,6 +15,7 @@ import MeasureStartScreen from './MeasureStartScreen/MeasureStartScreen';
 import MeasureDescriptionScreen from './MeasureDescriptionScreen/MeasureDescriptionScreen';
 import MeasureStepsScreen from './MeasureStepsScreen/MeasureStepsScreen';
 import MeasureEndScreen from './MeasureEndScreen/MeasureEndScreen';
+import PetDetailScreen from './PetDetailScreen/PetDetailScreen';
 
 export {
   FirstScreen,
@@ -34,4 +35,5 @@ export {
   MeasureDescriptionScreen,
   MeasureStepsScreen,
   MeasureEndScreen,
+  PetDetailScreen,
 };

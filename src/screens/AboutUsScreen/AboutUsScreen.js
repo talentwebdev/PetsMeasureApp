@@ -6,7 +6,7 @@ class AboutUsScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <MenuIcon />
+        <MenuIcon navigation={this.props.navigation} />
         <View style={styles.contentConatiner}>
           <TitleText first="About " second="Animal Movers" />
           <TextArea
@@ -21,7 +21,7 @@ class AboutUsScreen extends Component {
             numberOfLines={5}
           />
         </View>
-        <BottomTab />
+        <BottomTab navigation={this.props.navigation} />
       </View>
     );
   }

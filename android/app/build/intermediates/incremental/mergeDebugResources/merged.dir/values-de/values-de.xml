@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">Abbrechen</string>
     <string name="__arcore_continue">Weiter</string>
-    <string name="__arcore_install_app">Für diese Anwendung ist die neueste Version der Google Play-Dienste für AR erforderlich.</string>
-    <string name="__arcore_install_feature">Für diese Funktion ist die neueste Version der Google Play-Dienste für AR erforderlich.</string>
-    <string name="__arcore_installing">Google Play-Dienste für AR werden installiert…</string>
+    <string name="__arcore_install_app">Für diese Anwendung ist die neueste Version von ARCore erforderlich.</string>
+    <string name="__arcore_install_feature">Für diese Funktion ist die neueste Version von ARCore erforderlich.</string>
+    <string name="__arcore_installing">ARCore wird installiert…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Zur Startseite"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Nach oben"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Weitere Optionen"</string>

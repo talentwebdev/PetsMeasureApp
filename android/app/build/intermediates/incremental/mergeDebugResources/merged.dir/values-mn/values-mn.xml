@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">Цуцлах</string>
     <string name="__arcore_continue">Үргэлжлүүлэх</string>
-    <string name="__arcore_install_app">Энэ апп нь Google Play Services for AR-н хамгийн сүүлийн хувилбарыг шаарддаг.</string>
-    <string name="__arcore_install_feature">Энэ онцлог нь Google Play Services for AR-н хамгийн сүүлийн хувилбарыг шаарддаг.</string>
-    <string name="__arcore_installing">Google Play Services for AR-г суулгаж байна…</string>
+    <string name="__arcore_install_app">Энэ апликейшн ARCore-н хамгийн сүүлийн хувилбарыг шаардана.</string>
+    <string name="__arcore_install_feature">Энэ функц ARCore-н хамгийн сүүлийн хувилбарыг шаардана.</string>
+    <string name="__arcore_installing">ARCore суулгаж байна…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Нүүр хуудас уруу шилжих"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Дээш шилжих"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Бусад сонголт"</string>

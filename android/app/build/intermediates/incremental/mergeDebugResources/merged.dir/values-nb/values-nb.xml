@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="__arcore_cancel">Avbryt</string>
-    <string name="__arcore_continue">Fortsett</string>
-    <string name="__arcore_install_app">Denne appen krever den nyeste versjonen av Google Play-tjenester for AR.</string>
-    <string name="__arcore_install_feature">Denne funksjonen krever den nyeste versjonen av Google Play-tjenester for AR.</string>
-    <string name="__arcore_installing">Installerer Google Play-tjenester for AR …</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Naviger hjem"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Gå opp"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Flere alternativer"</string>

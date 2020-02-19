@@ -4,6 +4,23 @@
             "outputFile": "E:\\My_Work\\ReactNative\\PetsMeasureApp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\30b22b8d896c1e9d41f7497e45ed4816\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,143,267,369,471,585,705,825,937",
+                        "endColumns": "87,123,101,101,113,119,119,111,137",
+                        "endOffsets": "138,262,364,466,580,700,820,932,1070"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,16,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "687,775,899,1001,1103,1217,1337,1457,1658",
+                        "endColumns": "87,123,101,101,113,119,119,111,137",
+                        "endOffsets": "770,894,996,1098,1212,1332,1452,1564,1791"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\32c5831461e4766ef4792e7a89acc090\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -11,6 +28,13 @@
                         "startOffsets": "55,125,209,293,389,491,593,687",
                         "endColumns": "69,83,83,95,101,101,93,88",
                         "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,17",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,1569",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,1653"
                     }
                 }
             ]

@@ -2,9 +2,9 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="__arcore_cancel">Anulați</string>
     <string name="__arcore_continue">Continuați</string>
-    <string name="__arcore_install_app">Aplicația necesită cea mai recentă versiune de Servicii Google Play pentru realitate augmentată.</string>
-    <string name="__arcore_install_feature">Funcția necesită cea mai recentă versiune de Servicii Google Play pentru realitate augmentată.</string>
-    <string name="__arcore_installing">Se instalează Servicii Google Play pentru realitate augmentată…</string>
+    <string name="__arcore_install_app">Această aplicație necesită cea mai recentă versiune de ARCore.</string>
+    <string name="__arcore_install_feature">Această funcție necesită cea mai recentă versiune de ARCore.</string>
+    <string name="__arcore_installing">Se instalează ARCore…</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Navigați la ecranul de pornire"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Navigați în sus"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Mai multe opțiuni"</string>

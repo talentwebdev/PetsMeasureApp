@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "387434328768",
+    "firebase_url": "https://petsmeasure.firebaseio.com",
+    "project_id": "petsmeasure",
+    "storage_bucket": "petsmeasure.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387434328768:android:6041ef9a9b1befa6a77325",
+        "android_client_info": {
+          "package_name": "com.nativemoduletest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387434328768-ed6pllarbj0cjo4ft7v3o452vh232odj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn7ibs-MvDbtXvWKUVn5gBGZIEftmscoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387434328768-ed6pllarbj0cjo4ft7v3o452vh232odj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

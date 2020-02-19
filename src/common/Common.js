@@ -1,4 +1,14 @@
+import {StackActions, NavigationActions} from 'react-navigation';
+import {
+  _storeEmail,
+  _fetchEmail,
+  _storePassword,
+  _fetchPassword,
+  _initStorage,
+} from './Storage';
+
 const API_URL = 'http://192.168.1.19/petsmeasure';
+//const API_URL = 'https://animaltravel.co.za/petsmeasure';
 const UPDATE_USERDATA = 'UPDATE_USERDATA';
 const UPDATE_PET = 'UPDATE_PET';
 const MeasureSteps = [
@@ -28,4 +38,30 @@ const MeasureSteps = [
   },
 ];
 
-export {API_URL, UPDATE_USERDATA, UPDATE_PET, MeasureSteps};
+function navigateDrawerScreen(screen, props) {
+  const resetAction = StackActions.reset({
+    index: 0,
+    actions: [
+      NavigationActions.navigate({
+        routeName: 'DrawerNavigatorScreen',
+        params: {
+          page: screen,
+        },
+      }),
+    ],
+  });
+  props.navigation.dispatch(resetAction);
+}
+export {
+  API_URL,
+  UPDATE_USERDATA,
+  UPDATE_PET,
+  MeasureSteps,
+  navigateDrawerScreen,
+  // storage common functions
+  _storeEmail,
+  _fetchEmail,
+  _storePassword,
+  _fetchPassword,
+  _initStorage,
+};

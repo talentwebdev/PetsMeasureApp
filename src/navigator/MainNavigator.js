@@ -18,6 +18,7 @@ import {
   MeasureDescriptionScreen,
   MeasureStepsScreen,
   MeasureEndScreen,
+  PetDetailScreen,
 } from './../screens';
 import {Dimensions} from 'react-native';
 
@@ -47,6 +48,26 @@ const drawerNavigator = createDrawerNavigator(
       screen: MeasureEndScreen,
       navigationOptions: {headerShown: false},
     },
+    PetDetailScreen: {
+      screen: PetDetailScreen,
+      navigationOptions: {headerShown: false},
+    },
+    AboutUsScreen: {
+      screen: AboutUsScreen,
+      navigationOptions: {headerShown: false},
+    },
+    ContactUsScreen: {
+      screen: ContactUsScreen,
+      navigationOptions: {headerShown: false},
+    },
+    NotificationsScreen: {
+      screen: NotificationsScreen,
+      navigationOptions: {headerShown: false},
+    },
+    NotificationDetailScreen: {
+      screen: NotificationDetailScreen,
+      navigationOptions: {headerShown: false},
+    },
   },
   {
     initialRouteName: 'PetsListScreen',
@@ -73,18 +94,7 @@ const MainNavigator = createStackNavigator(
       screen: HomeScreen,
       navigationOptions: {headerShown: false},
     },
-    AboutUsScreen: {
-      screen: AboutUsScreen,
-      navigationOptions: {headerShown: false},
-    },
-    NotificationsScreen: {
-      screen: NotificationsScreen,
-      navigationOptions: {headerShown: false},
-    },
-    ContactUsScreen: {
-      screen: ContactUsScreen,
-      navigationOptions: {headerShown: false},
-    },
+
     MyProfileScreen: {
       screen: MyProfileScreen,
       navigationOptions: {headerShown: false},
@@ -93,10 +103,7 @@ const MainNavigator = createStackNavigator(
       screen: EditProfileScreen,
       navigationOptions: {headerShown: false},
     },
-    NotificationDetailScreen: {
-      screen: NotificationDetailScreen,
-      navigationOptions: {headerShown: false},
-    },
+
     DrawerNavigatorScreen: {
       screen: drawerNavigator,
       navigationOptions: {headerShown: false},
