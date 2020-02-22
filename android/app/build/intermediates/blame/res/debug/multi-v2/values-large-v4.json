@@ -4,7 +4,7 @@
             "outputFile": "E:\\My_Work\\ReactNative\\PetsMeasureApp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\32c5831461e4766ef4792e7a89acc090\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\4ba86c6ce1d0adfb83e5122235e24c8e\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\30b22b8d896c1e9d41f7497e45ed4816\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\db07a1d9aa2eb2a9738649305b9bffdd\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

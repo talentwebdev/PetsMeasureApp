@@ -4,17 +4,7 @@
             "outputFile": "E:\\My_Work\\ReactNative\\PetsMeasureApp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\29e9d019a65e94f59336973af751444b\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\32c5831461e4766ef4792e7a89acc090\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\4ba86c6ce1d0adfb83e5122235e24c8e\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\6bb6b6c00e5a375053b6e03407d44efd\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

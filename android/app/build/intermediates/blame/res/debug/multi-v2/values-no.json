@@ -4,7 +4,7 @@
             "outputFile": "E:\\My_Work\\ReactNative\\PetsMeasureApp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-no\\values-no.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\5407864f1bc193ef00a5ea4840543231\\res\\values-no\\values.xml",
+                    "source": "C:\\Users\\Superman\\.gradle\\caches\\transforms-2\\files-2.1\\d9a3e30f27728aee1e3e9d02840ff621\\res\\values-no\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",

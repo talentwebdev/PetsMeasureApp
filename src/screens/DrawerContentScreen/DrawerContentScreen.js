@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {CustomButton, MenuIcon} from './../../components';
 import {View, SafeAreaView, StyleSheet} from 'react-native';
-import {navigateDrawerScreen} from './../../common/Common';
+import {navigateDrawerScreen, _initStorage} from './../../common/Common';
 
 const DrawerContentScreen = props => (
   <SafeAreaView style={styles.container}>
@@ -52,6 +52,7 @@ const DrawerContentScreen = props => (
         text="Logout"
         type="HomeButton"
         onPress={() => {
+          _initStorage();
           props.navigation.navigate('LoginScreen');
         }}
       />

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {TitleText, CustomButton} from './../../components';
 import {View, StyleSheet} from 'react-native';
-import {navigateDrawerScreen} from './../../common/Common';
+import {navigateDrawerScreen, _initStorage} from './../../common/Common';
 
 class HomeScreen extends Component {
   render() {
@@ -61,6 +61,7 @@ class HomeScreen extends Component {
               type="HomeButton"
               text="Logout"
               onPress={() => {
+                _initStorage();
                 this.props.navigation.navigate('LoginScreen');
               }}
             />

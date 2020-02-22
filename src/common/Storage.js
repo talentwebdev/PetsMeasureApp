@@ -1,8 +1,9 @@
-import {AsyncStorage} from 'react-native';
+import AsyncStorage from '@react-native-community/async-storage';
 
 export const storage_values = {
   email: 'email',
   password: 'password',
+  fcmtoken: 'fcmtoken',
 };
 
 export const _storeEmail = async email => {
@@ -21,4 +22,12 @@ export const _fetchPassword = async () => {
 
 export const _initStorage = async () => {
   return AsyncStorage.clear();
+};
+
+export const _fetchFCMToken = async () => {
+  return AsyncStorage.getItem(storage_values.fcmtoken);
+};
+
+export const _storeFCMToken = async token => {
+  return AsyncStorage.setItem(storage_values.fcmtoken, token);
 };

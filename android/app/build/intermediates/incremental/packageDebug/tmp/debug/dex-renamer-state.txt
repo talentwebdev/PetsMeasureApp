@@ -1,0 +1,4 @@
+#Sat Feb 22 01:33:18 PST 2020
+base.0=E\:\\My_Work\\ReactNative\\PetsMeasureApp\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
