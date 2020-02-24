@@ -52,6 +52,9 @@ class PetsListScreen extends OpenDrawerComponent {
     }
   }
   componentDidMount() {}
+  componentDidUpdate() {
+    console.log('componentdidupdate');
+  }
   onClickPet(pet) {
     const resetAction = StackActions.reset({
       index: 0,

@@ -7,8 +7,9 @@ import {
   _initStorage,
 } from './Storage';
 
-const API_URL = 'http://192.168.1.19/petsmeasure';
-//const API_URL = 'https://animaltravel.co.za/petsmeasure';
+export const mode = 'TEST';
+//const API_URL = 'http://192.168.1.19/petsmeasure';
+const API_URL = 'https://animaltravel.co.za/petsmeasure';
 const UPDATE_USERDATA = 'UPDATE_USERDATA';
 const UPDATE_PET = 'UPDATE_PET';
 const MeasureSteps = [
@@ -38,7 +39,7 @@ const MeasureSteps = [
   },
 ];
 
-function navigateDrawerScreen(screen, props) {
+function navigateDrawerScreen(screen, props, params = {}) {
   const resetAction = StackActions.reset({
     index: 0,
     actions: [
@@ -46,6 +47,7 @@ function navigateDrawerScreen(screen, props) {
         routeName: 'DrawerNavigatorScreen',
         params: {
           page: screen,
+          ...params,
         },
       }),
     ],

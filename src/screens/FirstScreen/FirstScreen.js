@@ -7,13 +7,6 @@ import {API_URL, _fetchEmail, _fetchPassword} from './../../common/Common';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {updateUserData} from './action';
-import {
-  checkPermission,
-  createNotificationListeners,
-} from './../../pushnotification/FirebaseService';
-import firebase from 'react-native-firebase';
-import {Alert} from 'react-native';
-import {_storeFCMToken, _fetchFCMToken} from '../../common/Storage';
 
 async function requestCameraPermission() {
   try {

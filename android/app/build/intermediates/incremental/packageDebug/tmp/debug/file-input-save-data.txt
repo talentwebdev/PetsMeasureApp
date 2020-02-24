@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Feb 22 01:33:19 PST 2020
+#Sun Feb 23 23:10:56 PST 2020
 56.path=lib/arm64-v8a/libimagepipeline.so
 5.base=E\:\\My_Work\\ReactNative\\PetsMeasureApp\\android\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 42.base=E\:\\My_Work\\ReactNative\\PetsMeasureApp\\android\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0

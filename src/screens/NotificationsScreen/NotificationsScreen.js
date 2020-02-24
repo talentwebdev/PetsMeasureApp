@@ -7,14 +7,51 @@ import {
   RadioButtonLabel,
 } from 'react-native-simple-radio-button';
 import Colors from './../../colors/colors';
+import {API_URL, navigateDrawerScreen} from '../../common/Common';
+import {connect} from 'react-redux';
+import Spinner from 'react-native-loading-spinner-overlay';
+
 class NotificationsScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: [{title: 'abcd', key: '123'}],
+      items: [],
+      loading: true,
     };
 
     this.renderItem = this.renderItem.bind(this);
+    this.onSelect = this.onSelect.bind(this);
+  }
+
+  onSelect(index) {
+    const items = [...this.state.items];
+    items[index].read = true;
+    this.setState({items: items});
+
+    navigateDrawerScreen('NotificationDetailScreen', this.props, {
+      data: items[index],
+    });
+  }
+  componentDidMount() {
+    console.log('hello');
+    fetch(API_URL + '/notification/fetch', {
+      method: 'POST',
+      body: JSON.stringify({
+        authorization: this.props.user.token,
+      }),
+    })
+      .then(response => response.json())
+      .then(responsejson => {
+        console.log('fetch notification success', responsejson);
+        this.setState({loading: false});
+        if (responsejson.status === true) {
+          this.setState({items: responsejson.data});
+        }
+      })
+      .catch(err => {
+        this.setState({loading: false});
+        console.log('fetch notification error', err);
+      });
   }
   renderItem = _item => {
     return (
@@ -54,6 +91,7 @@ class NotificationsScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Spinner visible={this.state.loading} color={Colors.Red} />
         <MenuIcon navigation={this.props.navigation} />
         <TitleText
           first="Your "
@@ -87,4 +125,11 @@ const styles = StyleSheet.create({
     padding: 5,
   },
 });
-export default NotificationsScreen;
+
+const mapStatesToProps = (state, props) => {
+  return {
+    ...props,
+    user: state.user,
+  };
+};
+export default connect(mapStatesToProps)(NotificationsScreen);

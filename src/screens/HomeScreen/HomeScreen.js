@@ -2,8 +2,22 @@ import React, {Component} from 'react';
 import {TitleText, CustomButton} from './../../components';
 import {View, StyleSheet} from 'react-native';
 import {navigateDrawerScreen, _initStorage} from './../../common/Common';
+import {
+  checkPermission,
+  createNotificationListeners,
+} from './../../pushnotification/FirebaseService';
 
 class HomeScreen extends Component {
+  componentWillUnmount() {
+    this.notificationListener();
+    this.notificationOpenedListener();
+  }
+
+  async componentDidMount() {
+    checkPermission();
+    //createNotificationListeners(this);
+    createNotificationListeners(this); //add this line
+  }
   render() {
     return (
       <View style={styles.container}>

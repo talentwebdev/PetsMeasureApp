@@ -16,6 +16,7 @@ import Colors from './../../colors/colors';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {updateUserData} from './action';
+import {navigateWithNavigation} from './../../navigator/NavigationService';
 
 class LoginScreen extends ValidationComponent {
   constructor(props) {
@@ -87,7 +88,7 @@ class LoginScreen extends ValidationComponent {
         <Spinner visible={this.state.loader} color={Colors.Red} />
         {this.state.keyboardshow === false && (
           <View style={styles.titleContainer}>
-            <TitleText first="Welcome" second="to Animal Movers" />
+            <TitleText first="Welcome " second="to Animal Movers" />
             <NormalText text="Login" />
           </View>
         )}
@@ -118,6 +119,9 @@ class LoginScreen extends ValidationComponent {
             style={styles.button}
             text="Forgot Password"
             type="NormalButton"
+            onPress={() => {
+              navigateWithNavigation('ForgotPasswordEmailScreen');
+            }}
           />
         </View>
         <CustomButton

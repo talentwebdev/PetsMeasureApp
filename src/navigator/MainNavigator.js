@@ -19,6 +19,9 @@ import {
   MeasureStepsScreen,
   MeasureEndScreen,
   PetDetailScreen,
+  ForgotPasswordEmailScreen,
+  ForgotPasswordCodeScreen,
+  ForgotPasswordResetScreen,
 } from './../screens';
 import {Dimensions} from 'react-native';
 
@@ -106,6 +109,21 @@ const MainNavigator = createStackNavigator(
 
     DrawerNavigatorScreen: {
       screen: drawerNavigator,
+      navigationOptions: {headerShown: false},
+    },
+
+    ForgotPasswordEmailScreen: {
+      screen: ForgotPasswordEmailScreen,
+      navigationOptions: {headerShown: false},
+    },
+
+    ForgotPasswordCodeScreen: {
+      screen: ForgotPasswordCodeScreen,
+      navigationOptions: {headerShown: false},
+    },
+
+    ForgotPasswordResetScreen: {
+      screen: ForgotPasswordResetScreen,
       navigationOptions: {headerShown: false},
     },
   },

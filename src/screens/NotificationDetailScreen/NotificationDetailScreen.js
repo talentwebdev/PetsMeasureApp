@@ -2,8 +2,36 @@ import React, {Component} from 'react';
 import {MenuIcon, TitleText, BottomTab} from './../../components';
 import {View, Text, StyleSheet} from 'react-native';
 import Colors from './../../colors/colors';
+import {API_URL} from './../../common/Common';
+import {connect} from 'react-redux';
 
 class NotificationDetailScreen extends Component {
+  constructor(props) {
+    super(props);
+
+    const {navigation} = props;
+    const notification = navigation.getParam('data');
+    this.state = {
+      title: notification.title,
+      content: notification.content,
+    };
+
+    console.log('notification detail', notification);
+    fetch(API_URL + '/notification/read', {
+      method: 'POST',
+      body: JSON.stringify({
+        id: notification.id,
+        authorization: this.props.user.token,
+      }),
+    })
+      .then(response => response.json())
+      .then(responsejson => {
+        console.log('read notification success', responsejson);
+      })
+      .catch(err => {
+        console.log('read notification error', err);
+      });
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -14,9 +42,9 @@ class NotificationDetailScreen extends Component {
             first="Your "
             second="Notifications"
           />
-          <Text style={styles.notificationTitle}>New Notification</Text>
+          <Text style={styles.notificationTitle}>{this.state.title}</Text>
           <View style={styles.notificationMessageContainer}>
-            <Text style={styles.notificationMessage}>Notification message</Text>
+            <Text style={styles.notificationMessage}>{this.state.content}</Text>
           </View>
         </View>
         <BottomTab navigation={this.props.navigation} />
@@ -54,4 +82,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export default NotificationDetailScreen;
+const mapStatesToProps = (state, props) => {
+  return {
+    ...props,
+    user: state.user,
+  };
+};
+export default connect(mapStatesToProps)(NotificationDetailScreen);

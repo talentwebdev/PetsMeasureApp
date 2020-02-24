@@ -16,6 +16,9 @@ import MeasureDescriptionScreen from './MeasureDescriptionScreen/MeasureDescript
 import MeasureStepsScreen from './MeasureStepsScreen/MeasureStepsScreen';
 import MeasureEndScreen from './MeasureEndScreen/MeasureEndScreen';
 import PetDetailScreen from './PetDetailScreen/PetDetailScreen';
+import ForgotPasswordEmailScreen from './ForgotPaswordEmailScreen';
+import ForgotPasswordCodeScreen from './ForgotPasswordCodeScreen';
+import ForgotPasswordResetScreen from './ForgotPasswordResetScreen';
 
 export {
   FirstScreen,
@@ -36,4 +39,7 @@ export {
   MeasureStepsScreen,
   MeasureEndScreen,
   PetDetailScreen,
+  ForgotPasswordEmailScreen,
+  ForgotPasswordCodeScreen,
+  ForgotPasswordResetScreen,
 };

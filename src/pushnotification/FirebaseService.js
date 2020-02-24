@@ -1,6 +1,7 @@
 import firebase from 'react-native-firebase';
 import {Alert} from 'react-native';
 import {_fetchFCMToken, _storeFCMToken} from './../common/Storage';
+import {navigateWithNavigation} from './../navigator/NavigationService';
 
 export async function getToken() {
   let fcmToken = await _fetchFCMToken();
@@ -43,8 +44,8 @@ export async function createNotificationListeners(component) {
     .notifications()
     .onNotification(notification => {
       console.log('notification in foreground');
-      const {title, body} = notification;
-      showAlert(title, body);
+      console.log('foreground', notification);
+      onNotification(notification);
     });
 
   /*
@@ -56,6 +57,7 @@ export async function createNotificationListeners(component) {
       console.log('notification in background');
       const {title, body} = notificationOpen.notification;
       showAlert(title, body);
+      onNotification(notificationOpen.notification);
     });
 
   /*
@@ -65,9 +67,12 @@ export async function createNotificationListeners(component) {
     .notifications()
     .getInitialNotification();
   if (notificationOpen) {
-    console.log('initial');
+    console.log('initial', notificationOpen.notification.data);
+    onNotification(notificationOpen.notification.data);
+    /*
     const {title, body} = notificationOpen.notification;
     showAlert(title, body);
+    */
   }
   /*
    * Triggered for data only payload in foreground
@@ -86,4 +91,11 @@ function showAlert(title, body) {
     [{text: 'OK', onPress: () => console.log('OK Pressed')}],
     {cancelable: false},
   );
+}
+
+function onNotification(notification) {
+  console.log('New Notificaiton', notification);
+  navigateWithNavigation('NotificationDetailScreen', true, {
+    data: notification,
+  });
 }
